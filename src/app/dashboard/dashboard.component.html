@@ -1,0 +1,47 @@
+<div class="custom-control custom-switch mt-3">
+    AutoSave
+    <input type="checkbox" class="custom-control-input" id="customSwitches">
+    <label class="custom-control-label ml-5" for="customSwitches">
+    </label>
+</div>
+
+
+<div class="dashboard">
+    <ul class="sidebar">
+        <li class="navlist" routerLink="layout">
+            <img src="../assets/img/Webyout.png" alt="">
+            <span>Webite Layout</span>
+        </li>
+        <li class="navlist" routerLink="baseinfo">
+            <img src="../assets/img/Basicinformation.png" alt="">
+            <span>Basic Information</span>
+        </li>
+        <li class="navlist">
+            <img src="../assets/img/Images.png" alt="">
+            <span>Images</span>
+        </li>
+        <li class="navlist" routerLink="projects">
+            <img src="../assets/img/Projects.png" alt="">
+            <span>Projects</span>
+        </li>
+        <li class="navlist">
+            <img src="../assets/img/Degree.png" alt="">
+            <span>360 degree videos</span>
+        </li>
+        <li class="navlist" routerLink="marketing">
+            <img src="../assets/img/marketing.png" alt="">
+            <span>Marketing</span>
+        </li>
+        <li class="navlist">
+            <img src="../assets/img/Schedule.png" alt="">
+            <span>Schedule</span>
+        </li>
+        <li class="navlist">
+            <img src="../assets/img/Settings.png" alt="">
+            <span>Settings</span>
+        </li>
+    </ul>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>

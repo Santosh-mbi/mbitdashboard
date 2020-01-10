@@ -1,0 +1,56 @@
+@import "../../vars";
+.dashboard{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.sidebar{
+    height: auto;
+    width: 20%;
+    padding: 7rem 1rem;
+    background-color: var(--color-primary-gray);
+    margin: 2rem 2rem;
+    flex: content;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex: 1;
+    margin: 2rem 2rem;
+    background-color: var(--color-primary-gray);
+    padding: 5rem 10rem;
+}
+.navlist{
+    text-decoration: none;
+    list-style: none;
+    padding: 1.5rem 2rem;
+    background-color: var(--color-primary-white);
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+       span{
+           display: none;
+       }
+    }
+
+}
+.navlist:hover{
+    background-color: var(--color-secondary-light);
+    cursor: pointer;
+    color: var(--color-primary-white);
+}
+.navlist img{
+    width:2rem;
+    margin-right: 1rem;
+    color: var(--color-secondary-blue);  
+}
+
+.navlist span{
+   font-size: 1.2rem;
+}
+
+  

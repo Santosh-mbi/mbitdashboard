@@ -1,0 +1,176 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Info" role="tab" aria-controls="Info"
+            aria-selected="true">Info</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Navbar" role="tab" aria-controls="Navbar"
+            aria-selected="false">Navbar</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Footer" role="tab" aria-controls="Footer"
+            aria-selected="false">Footer</a>
+    </li>
+</ul>
+<div class="card">
+    <div class="card-body tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="Info" role="tabpanel" aria-labelledby="home-tab">
+            <div class="w80 ">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 nowrap">
+                            <div class="form-group row">
+                                <label for="phonenumber" class="col-sm-2 col-form-label">Phone</label>
+                                <div class="col-sm-10">
+                                    <div class="d-flex">
+                                        <input type="tel" name="" value="+91" class="form-control mobile mr-3">
+                                        <input type="tel" class="form-control" placeholder="Mobile number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Address</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Street Address 1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label mt-2"></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control  mt-2" placeholder="Street Address 2">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"></label>
+                                <div class="d-flex col-sm-10">
+                                    <input type="text" name="" class="form-control  mt-2 px-4" placeholder="City">
+                                    <input type="tel" class="form-control  mt-2 ml-4 px-3" placeholder="State/Province">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"></label>
+                                <div class="d-flex col-sm-10">
+                                    <input type="text" name="" class="form-control mr-3 px-4  mt-2"
+                                        placeholder="ZipCode">
+                                    <select class="form-control  px-1 ml-4  mt-2" placeholder="Select Country">
+                                        <option value="volvo"> Select Country</option>
+                                        <option value="saab">India</option>
+                                        <option value="mercedes">USA</option>
+                                        <option value="audi">UAE</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Title</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control mt-2 " placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label nowrap">Description</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control  mt-2 " rows="3"></textarea>
+                                </div>
+                                <div class="col-sm-10">
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">
+                                    <img class="icons" src="assets/img/gps.jpg">
+                                </label>
+                                <div class="d-flex col-sm-10">
+                                    <input type="text" name="" class="form-control  mt-2 px-4" placeholder="Latitude">
+                                    <input type="tel" class="form-control  mt-2 ml-4 px-3" placeholder="Longitude">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 nowrap">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <label class="col-sm-2 col-form-label">Logo</label>
+                                <img class="mx-2" src="assets/img/imgupload.png" height="50" width="100">
+                                <div class="mx-3 py-1 px-2">
+                                    <div class="col-md-6">
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <label class="col-sm-2 col-form-label ">Favicon</label>
+                                <img class="mx-2" src="assets/img/imgupload.png" height="50" width="100">
+                                <div class="mx-3 py-1 px-2">
+                                    <div class="col-md-6">
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="Navbar" role="tabpanel" aria-labelledby="profile-tab">
+            <h5> Navbar Details</h5>
+            <div class="w80">
+                <form name="myForm">
+                    <label>
+                        <input type="checkbox" ng-model="checkboxModel.HomePage"> HomePage
+                    </label><br>
+                    <label>
+                        <input type="checkbox" ng-model="checkboxModel.About"> About
+                    </label><br>
+                    <label>
+                        <input type="checkbox" ng-model="checkboxModel.Projects"> Projects
+                    </label><br>
+                    <label>
+                        <input type="checkbox" ng-model="checkboxModel.Contact"> Contact
+                    </label><br>
+                    <label>
+                        <input type="checkbox" ng-model="checkboxModel.Blog"> Blog
+                    </label><br>
+                    <label>
+                        <input type="checkbox" ng-model="checkboxModel.Schedule Visit"> Schedule Visit
+                    </label><br>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="Footer" role="tabpanel" aria-labelledby="contact-tab">
+            <h5> Footer</h5>
+            <div class="w80 nowrap">
+                <form>
+                    <div class="form-group row">
+                        <label for="Copyright" class="col-sm-1 col-form-label">Copyright</label>
+                        <div class="col-sm-10">
+                            <div class="d-flex year">
+                                <input class="form-control mr-3" type="Copyright" placeholder="Company name">
+                                <input class="form-control" type="Copyright" placeholder="year">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-1 col-form-label">privacy Policy</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control  mt-2 ml-2" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-1 col-form-label">Terms& Conditions</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control  mt-2 ml-2" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitches">
+                        <label class="custom-control-label" for="customSwitches">Newsletter</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

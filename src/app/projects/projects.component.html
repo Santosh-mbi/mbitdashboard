@@ -1,0 +1,117 @@
+<!-- <p>https://stackoverflow.com/questions/38457662/iframe-inside-angular2-component-property-contentwindow-does-not-exist-on-typ</p> -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Info" role="tab" aria-controls="Info"
+            aria-selected="true">Info</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Navbar" role="tab" aria-controls="Navbar"
+            aria-selected="false">Images</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Footer" role="tab" aria-controls="Footer"
+            aria-selected="false">Floor Plan</a>
+    </li>
+</ul>
+<div class="card">
+    <div class="card-body tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="Info" role="tabpanel" aria-labelledby="home-tab">
+            <div class="w80">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 nowrap">
+                            <div class="form-group row">
+                                <label for="phonenumber" class="col-sm-2 col-form-label">Project Name</label>
+                                <div class="col-sm-10">
+                                    <div class="d-flex">
+                                        <input type="tel" name="" value="+91" class="form-control mobile mr-3">
+                                        <input type="tel" class="form-control" placeholder="Mobile number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label nowrap">Description</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control  mt-2 " rows="3"></textarea>
+                                </div>
+                               
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Address</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Street Address 1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label mt-2"></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control  mt-2" placeholder="Street Address 2">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"></label>
+                                <div class="d-flex col-sm-10">
+                                    <input type="text" name="" class="form-control  mt-2 px-4" placeholder="City">
+                                    <input type="tel" class="form-control  mt-2 ml-4 px-3" placeholder="State/Province">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label"></label>
+                                <div class="d-flex col-sm-10">
+                                    <input type="text" name="" class="form-control mr-3 px-4  mt-2"
+                                        placeholder="ZipCode">
+                                    <select class="form-control  px-1 ml-4  mt-2" placeholder="Select Country">
+                                        <option value="volvo"> Select Country</option>
+                                        <option value="saab">India</option>
+                                        <option value="mercedes">USA</option>
+                                        <option value="audi">UAE</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">
+                                    Map <img class="icons" src="assets/img/gps.jpg">
+                                </label>
+                                <div class="d-flex col-sm-10">
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">
+                                    Amenities
+                                </label>
+                                <div class="d-flex col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Pool</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Security</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                            value="option3">
+                                        <label class="form-check-label" for="inlineCheckbox3">Lounge</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="Navbar" role="tabpanel" aria-labelledby="profile-tab">
+
+        </div>
+        <div class="tab-pane fade" id="Footer" role="tabpanel" aria-labelledby="contact-tab">
+
+        </div>
+    </div>
+</div>
