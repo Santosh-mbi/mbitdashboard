@@ -15,13 +15,13 @@
 <div class="card">
     <div class="card-body tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="Info" role="tabpanel" aria-labelledby="home-tab">
-            <div class="w80 ">
+            <div class="w80">
                 <form>
                     <div class="row">
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 nowrap">
                             <div class="form-group row">
                                 <label for="phonenumber" class="col-sm-2 col-form-label">Phone</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-10 col-12">
                                     <div class="d-flex">
                                         <input type="tel" name="" value="+91" class="form-control mobile mr-3">
                                         <input type="tel" class="form-control" placeholder="Mobile number">
@@ -30,35 +30,36 @@
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-10 col-12">
                                     <input type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Address</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-10 col-12">
                                     <input type="text" class="form-control" placeholder="Street Address 1">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label mt-2"></label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-10 col-12">
                                     <input type="text" class="form-control  mt-2" placeholder="Street Address 2">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label"></label>
-                                <div class="d-flex col-sm-10">
-                                    <input type="text" name="" class="form-control  mt-2 px-4" placeholder="City">
-                                    <input type="tel" class="form-control  mt-2 ml-4 px-3" placeholder="State/Province">
+                                <div class="d-flex flex-md-row flex-column col-sm-10">
+                                    <input type="text" name="" class="form-control  mr-md-3 mt-2 px-md-3"
+                                        placeholder="City">
+                                    <input type="tel" class="form-control mt-2 px-md-1" placeholder="State/Province">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label"></label>
-                                <div class="d-flex col-sm-10">
-                                    <input type="text" name="" class="form-control mr-3 px-4  mt-2"
+                                <div class="d-flex flex-md-row flex-column col-sm-10">
+                                    <input type="text" name="" class="form-control mr-md-3 px-md-3  mt-2"
                                         placeholder="ZipCode">
-                                    <select class="form-control  px-1 ml-4  mt-2" placeholder="Select Country">
+                                    <select class="form-control px-md-1  mt-2" placeholder="Select Country">
                                         <option value="volvo"> Select Country</option>
                                         <option value="saab">India</option>
                                         <option value="mercedes">USA</option>
@@ -68,46 +69,45 @@
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Title</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-10 col-12">
                                     <input type="text" class="form-control mt-2 " placeholder="">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label nowrap">Description</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-10 col-12">
                                     <textarea class="form-control  mt-2 " rows="3"></textarea>
-                                </div>
-                                <div class="col-sm-10">
-
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">
                                     <img class="icons" src="assets/img/gps.jpg">
                                 </label>
-                                <div class="d-flex col-sm-10">
-                                    <input type="text" name="" class="form-control  mt-2 px-4" placeholder="Latitude">
-                                    <input type="tel" class="form-control  mt-2 ml-4 px-3" placeholder="Longitude">
+                                <div class="d-flex flex-column flex-md-row col-sm-10">
+                                    <input type="text" name="" class="form-control mt-2 px-md-2" placeholder="Latitude">
+                                    <input type="tel" class="form-control  mt-2 ml-md-4 px-md-1" placeholder="Longitude">
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 nowrap">
-                            <div class="d-flex align-items-center justify-content-center">
+                            <div class="d-flex flex-md-row flex-column align-items-md-center row">
                                 <label class="col-sm-2 col-form-label">Logo</label>
-                                <img class="mx-2" src="assets/img/imgupload.png" height="50" width="100">
-                                <div class="mx-3 py-1 px-2">
-                                    <div class="col-md-6">
-                                        <input type="file">
-                                    </div>
+                                <img class="col-4" src="assets/img/imgupload.png" height="50" width="100">
+                                <div class="col-md-6 py-1 px-2">
+                                    <label class="btn btn-primary">
+                                        <input type="file" class="fx-hide">
+                                        Choose File
+                                    </label>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <label class="col-sm-2 col-form-label ">Favicon</label>
-                                <img class="mx-2" src="assets/img/imgupload.png" height="50" width="100">
-                                <div class="mx-3 py-1 px-2">
-                                    <div class="col-md-6">
-                                        <input type="file">
-                                    </div>
+                            <div class="d-flex flex-md-row flex-column align-items-md-center row">
+                                <label class="col-2 col-form-label ">Favicon</label>
+                                <img class="col-4" src="assets/img/imgupload.png" height="50" width="100">
+                                <div class="col-6 py-1 px-2">
+                                    <label class="btn btn-primary">
+                                        <input type="file" class="fx-hide">
+                                        Choose File
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -145,29 +145,30 @@
             <div class="w80 nowrap">
                 <form>
                     <div class="form-group row">
-                        <label for="Copyright" class="col-sm-1 col-form-label">Copyright</label>
-                        <div class="col-sm-10">
-                            <div class="d-flex year">
-                                <input class="form-control mr-3" type="Copyright" placeholder="Company name">
+                        <label for="Copyright" class="col-sm-2 col-form-label">Copyright</label>
+                        <div class="col-sm-10 col-12">
+                            <div class="d-flex flex-md-row flex-column year">
+                                <input class="form-control mr-3 mb-2" type="Copyright" placeholder="Company name">
                                 <input class="form-control" type="Copyright" placeholder="year">
                             </div>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-1 col-form-label">privacy Policy</label>
-                        <div class="col-sm-6">
+                        <label class="col-sm-2 col-form-label">privacy Policy</label>
+                        <div class="col-sm-6 col-12">
                             <textarea class="form-control  mt-2 ml-2" rows="5"></textarea>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-1 col-form-label">Terms& Conditions</label>
-                        <div class="col-sm-6">
+                        <label class="col-sm-2 col-form-label">Terms& Conditions</label>
+                        <div class="col-sm-6 col-12
+                        ">
                             <textarea class="form-control  mt-2 ml-2" rows="5"></textarea>
                         </div>
                     </div>
                     <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="customSwitches">
-                        <label class="custom-control-label" for="customSwitches">Newsletter</label>
+                        <input type="checkbox" class="custom-control-input" id="customSwitches2">
+                        <label class="custom-control-label" for="customSwitches2">Newsletter</label>
                     </div>
                 </form>
             </div>
