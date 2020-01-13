@@ -12,6 +12,14 @@ import { WeblayoutComponent } from './weblayout/weblayout.component';
 import { BasicInformationComponent } from './basic-information/basic-information.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
+import { ImagesComponent } from './images/images.component';
+import { VideosComponent } from './videos/videos.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { SettingsComponent } from './settings/settings.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 @NgModule({
@@ -24,13 +32,19 @@ import { HomeComponent } from './home/home.component';
     WeblayoutComponent,
     BasicInformationComponent,
     ProjectsComponent,
-    HomeComponent
+    HomeComponent,
+    ImagesComponent,
+    VideosComponent,
+    ScheduleComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatDatepickerModule,MatFormFieldModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

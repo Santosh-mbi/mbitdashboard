@@ -51,17 +51,17 @@
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label"></label>
-                                <div class="d-flex col-sm-10">
+                                <div class="d-flex flex-md-row flex-column col-sm-10">
                                     <input type="text" name="" class="form-control  mt-2 px-4" placeholder="City">
-                                    <input type="tel" class="form-control  mt-2 ml-4 px-3" placeholder="State/Province">
+                                    <input type="tel" class="form-control  mt-2 ml-md-4 px-3" placeholder="State/Province">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label"></label>
-                                <div class="d-flex col-sm-10">
-                                    <input type="text" name="" class="form-control mr-3 px-4  mt-2"
+                                <div class="d-flex flex-md-row flex-column col-sm-10">
+                                    <input type="text" name="" class="form-control mr-3 px-md-4  mt-2"
                                         placeholder="ZipCode">
-                                    <select class="form-control  px-1 ml-4  mt-2" placeholder="Select Country">
+                                    <select class="form-control  px-md-1 ml-md-4  mt-2" placeholder="Select Country">
                                         <option value="volvo"> Select Country</option>
                                         <option value="saab">India</option>
                                         <option value="mercedes">USA</option>
@@ -111,7 +111,51 @@
 
         </div>
         <div class="tab-pane fade" id="Footer" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="w80 nowrap">
+                <div class="col-4 mb-4">
+                    <h3>Upload Floor Plan</h3>
+                    <hr>
+                </div>
+                <form class="ml-4">
+                    <div class="form-group row">
+                        <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">Floor</label>
+                        <div class="col-sm-4">
+                            <select class="custom-select">
+                                <option selected>select</option>
+                                <option value="1">2bhk</option>
+                                <option value="2">3bhk</option>
+                                <option value="3">4bhk</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">Floor</label>
+                        <div class="col-sm-4">
+                            <select class="custom-select">
+                                <option selected>select</option>
+                                <option value="1">2bhk</option>
+                                <option value="2">3bhk</option>
+                                <option value="3">4bhk</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">Area</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" placeholder="Sq.ft">
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5 align-items-center">
+                        <img src="assets/img/imgupload.png" alt="" height="50" width="100">
+                        <input type="file">
+                    </div>
+                    <hr class="col-4 mb-4">
 
+                    <div class="cuisinecarousel">
+
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
