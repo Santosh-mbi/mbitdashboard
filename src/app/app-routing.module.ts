@@ -6,6 +6,10 @@ import { BasicInformationComponent } from './basic-information/basic-information
 import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ImagesComponent } from './images/images.component';
+import { VideosComponent } from './videos/videos.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { SettingsComponent } from './settings/settings.component';
 
 
 const routes: Routes = [
@@ -14,8 +18,12 @@ const routes: Routes = [
         children: [
           { path: 'layout', component: WeblayoutComponent },
           { path: 'baseinfo', component: BasicInformationComponent },
+          { path: 'images', component: ImagesComponent },
           { path: 'marketing', component: MarketingComponent },
           { path: 'projects', component: ProjectsComponent },
+          { path: 'videos', component: VideosComponent },
+          { path: 'schedule', component: ScheduleComponent },
+          { path: 'settings', component: SettingsComponent },
         ]
       },
   
