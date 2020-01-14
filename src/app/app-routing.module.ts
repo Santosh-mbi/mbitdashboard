@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'dashboard', component: DashboardComponent,
         children: [
+          { path: '', component: WeblayoutComponent, pathMatch: 'full' },
           { path: 'layout', component: WeblayoutComponent },
           { path: 'baseinfo', component: BasicInformationComponent },
           { path: 'marketing', component: MarketingComponent },
