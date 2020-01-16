@@ -19,7 +19,9 @@ import { SettingsComponent } from './settings/settings.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
-
+import { ChooseTemplateComponent } from './choose-template/choose-template.component';
+import { CreatWebsiteComponent } from './creat-website/creat-website.component';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     ImagesComponent,
     VideosComponent,
     ScheduleComponent,
-    SettingsComponent
+    SettingsComponent,
+    ChooseTemplateComponent,
+    CreatWebsiteComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     BrowserAnimationsModule,
     FormsModule,
     MatDatepickerModule,MatFormFieldModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    PaginationModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
