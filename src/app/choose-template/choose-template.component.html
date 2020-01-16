@@ -1,10 +1,12 @@
+<!-- https://stackoverflow.com/questions/45663672/ngx-pagination-reset-pagination-to-first-page -->
 <div class="container">
-    <div class="card col-12">
-        <div class="card-body">
-            <div class="content-item" *ngFor="let content of returnedArray" class="content-wrapper">
-                <p>{{content}}</p>
+    <div class="card col-12 ">
+        <div class="mt-5 card-body grid-container">
+            <div (click)="chooseTemplate()" class="content-wrapper template-wrapper" *ngFor="let content of returnedArray">
+                    <img class="content-item template-img" src="http://placekitten.com/305/205" alt=" ">
+                    <h1 class="content-item template-title">{{content}}</h1>
             </div>
-            <pagination previousText="&lsaquo;" nextText="&rsaquo;" [totalItems]="contentArray.length" (pageChanged)="pageChanged($event)"></pagination>
         </div>
+        <pagination class="mx-auto mt-4" previousText="&lsaquo;" nextText="&rsaquo;" [itemsPerPage]="6" [totalItems]="contentArray.length" (pageChanged)="pageChanged($event)"></pagination>
     </div>
 </div>
