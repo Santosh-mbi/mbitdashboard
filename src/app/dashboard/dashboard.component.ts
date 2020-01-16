@@ -13,6 +13,8 @@ export class DashboardComponent implements OnInit {
     router.events.subscribe(event => {
       if (router.url === '/dashboard' || router.url === '/dashboard/choose-template') {
         this.showSidebar = false;
+      }else{
+        this.showSidebar = true;
       }
     })
   }
