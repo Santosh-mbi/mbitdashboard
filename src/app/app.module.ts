@@ -19,8 +19,9 @@ import { SettingsComponent } from './settings/settings.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
-
-
+// For MDB Angular Pro
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     BrowserAnimationsModule,
     FormsModule,
     MatDatepickerModule,MatFormFieldModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MDBBootstrapModule.forRoot(),
+    CarouselModule, WavesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
