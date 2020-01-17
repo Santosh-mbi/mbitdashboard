@@ -14,12 +14,19 @@
         height: 200px;
         width: 100%;
         object-fit: cover;
+        object-position: top center;
+        transition: all 5s ease;
+        cursor: pointer;
     }
+    .template-img:hover {
+      object-position: bottom center;
+  }
     .template-title {
         position: absolute;
         bottom: -5px;
         width: 100%;
         padding: 10px;
-        background-color: rgba(255, 255, 255, 0.2);
+        z-index: 9;
+        background-color: rgba(255, 255, 255, 0.6);
     }
   }
