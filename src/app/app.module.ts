@@ -25,6 +25,7 @@ import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
 import { ChooseTemplateComponent } from './choose-template/choose-template.component';
 import { CreatWebsiteComponent } from './creat-website/creat-website.component';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { AddprojectComponent } from './addproject/addproject.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     ScheduleComponent,
     SettingsComponent,
     ChooseTemplateComponent,
-    CreatWebsiteComponent
+    CreatWebsiteComponent,
+    AddprojectComponent
   ],
   imports: [
     BrowserModule,

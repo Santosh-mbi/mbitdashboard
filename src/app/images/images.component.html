@@ -1,57 +1,70 @@
+<div class="card">
+     <div class="w80 nowrap">
+          <div class="card-body mt-5">
+               <h5>Home Page </h5>
+               <div class="custom-control custom-switch mt-2">
+                    <input type="checkbox" class="custom-control-input" id="customSwitches2">
+                    <label class="custom-control-label" for="customSwitches2">Carousal</label>
+               </div>
+               <!--Carousel Wrapper-->
+               <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation mb-5 mbs"
+                    [type]="'carousel-multi-item'">
 
-<h5>Home Page </h5> 
-<div class="custom-control custom-switch mt-2">
-     <input type="checkbox" class="custom-control-input" id="customSwitches2">
-     <label class="custom-control-label" for="customSwitches2">Carousal</label>
- </div>
-     <!--Carousel Wrapper-->
-     <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation mb-5 mbs" [type]="'carousel-multi-item'">
-     
-     <mdb-carousel-item *ngFor="let item of slides; let i = index">
-       <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
-         <mdb-card class="my-1">
-           <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>         
-         </mdb-card>
-       </div>
-     </mdb-carousel-item>
-</mdb-carousel>
-  
+                    <mdb-carousel-item *ngFor="let item of slides; let i = index">
+                         <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}"
+                              *ngFor="let card of item; let cardIndex = index">
+                              <mdb-card class="my-1">
+                                   <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+                              </mdb-card>
+                         </div>
+                    </mdb-carousel-item>
+               </mdb-carousel>
 
-   <div class="form-row">
-     <div class="col-2 mt-4">
-         <label for="exampleFormControlFile1">About us page</label>
-     </div>
-       <div class="col-2  mt-3">
-            <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
-       </div>
-          <div class="col-3 mt-4">
-               <input type="file" class="form-control-file" id="exampleFormControlFile1">
+
+               <div class="form-row">
+                    <div class="col-2 mt-5">
+                         <label for="exampleFormControlFile1">About us page</label>
+                    </div>
+                    <div class="col-2  mt-3">
+                         <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
+                    </div>
+                    <div class="col-3 mt-4">
+                         <label class="btn btn-primary">
+                              <input type="file" class="fx-hide">
+                              Choose File
+                         </label>
+                    </div>
+               </div>
+
+               <div class="form-row">
+                    <div class="col-2 mt-5">
+                         <label for="exampleFormControlFile1">Contact us page</label>
+                    </div>
+                    <div class="col-2  mt-3">
+                         <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
+                    </div>
+                    <div class="col-3 mt-4">
+                         <label class="btn btn-primary">
+                              <input type="file" class="fx-hide">
+                              Choose File
+                         </label>
+                    </div>
+               </div>
+
+               <div class="form-row">
+                    <div class="col-2 mt-5">
+                         <label for="exampleFormControlFile1">About us page</label>
+                    </div>
+                    <div class="col-2  mt-3">
+                         <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
+                    </div>
+                    <div class="col-3 mt-4">
+                         <label class="btn btn-primary">
+                              <input type="file" class="fx-hide">
+                              Choose File
+                         </label>
+                    </div>
+               </div>
           </div>
      </div>
-        
-          <div class="form-row">
-          <div class="col-2 mt-4">
-               <label for="exampleFormControlFile1">Contact us page</label>
-           </div>
-             <div class="col-2  mt-3">
-                  <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
-             </div>
-                <div class="col-3 mt-4">
-                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-               </div>  
-     
-           <div class="form-row">
-           <div class="col-2 mt-4">
-                    <label for="exampleFormControlFile1">About us page</label>
-                </div>
-                  <div class="col-2  mt-3">
-                       <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
-                  </div>
-                     <div class="col-3 mt-4">
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                     </div>      
-                    </div>
-   
-         
-      
+</div>
