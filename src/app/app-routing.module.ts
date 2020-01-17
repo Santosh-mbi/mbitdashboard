@@ -12,6 +12,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CreatWebsiteComponent } from './creat-website/creat-website.component';
 import { ChooseTemplateComponent } from './choose-template/choose-template.component';
+import { AddprojectComponent } from './addproject/addproject.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
           { path: 'images', component: ImagesComponent },
           { path: 'marketing', component: MarketingComponent },
           { path: 'projects', component: ProjectsComponent },
+          { path: 'addprojects', component: AddprojectComponent },
           { path: 'videos', component: VideosComponent },
           { path: 'schedule', component: ScheduleComponent },
           { path: 'settings', component: SettingsComponent },

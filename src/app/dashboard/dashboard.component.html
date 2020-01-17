@@ -1,11 +1,15 @@
-<div class="custom-control custom-switch mt-3">
+<div class="custom-control custom-switch mt-3 d-flex flex-row">
     AutoSave
     <input type="checkbox" class="custom-control-input" id="customSwitches">
     <label class="custom-control-label ml-5" for="customSwitches">
     </label>
+    <div class="ml-auto mr-3">
+        <button type="button" class="btn btn-primary mr-1">Publish</button>
+        <button type="button" class="btn btn-light ">Preview</button>
+    </div>
 </div>
 
-<div class="dashboard">
+    <div class="dashboard">
     <ul *ngIf="showSidebar" class="sidebar">
         <li class="navlist" routerLink="layout">
             <img src="../assets/img/Webyout.png" alt="Webite Layout" title="Webite Layout">
@@ -22,6 +26,10 @@
         <li class="navlist" routerLink="projects">
             <img src="../assets/img/Projects.png" alt="Projects" title="Projects">
             <span>Projects</span>
+        </li>
+        <li class="navlist" routerLink="addprojects">
+            <img src="../assets/img/Projects.png" alt=" Add Projects" title=" Add Projects">
+            <span>Add Projects</span>
         </li>
         <li class="navlist" routerLink="videos">
             <img src="../assets/img/Degree.png" alt="360 degree videos" title="360 degree videos">
