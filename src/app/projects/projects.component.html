@@ -1,4 +1,3 @@
-<!-- <p>https://stackoverflow.com/questions/38457662/iframe-inside-angular2-component-property-contentwindow-does-not-exist-on-typ</p> -->
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Info" role="tab" aria-controls="Info"
@@ -34,7 +33,7 @@
                                 <div class="col-sm-10">
                                     <textarea class="form-control  mt-2 " rows="3"></textarea>
                                 </div>
-                               
+
                             </div>
 
                             <div class="form-group row">
@@ -53,7 +52,8 @@
                                 <label class="col-sm-2 col-form-label"></label>
                                 <div class="d-flex flex-md-row flex-column col-sm-10">
                                     <input type="text" name="" class="form-control  mt-2 px-4" placeholder="City">
-                                    <input type="tel" class="form-control  mt-2 ml-md-4 px-3" placeholder="State/Province">
+                                    <input type="tel" class="form-control  mt-2 ml-md-4 px-3"
+                                        placeholder="State/Province">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -108,142 +108,155 @@
             </div>
         </div>
         <div class="tab-pane fade" id="Navbar" role="tabpanel" aria-labelledby="profile-tab">
-           
-            <h3>Project Images</h3>
-            <form>
-                <div class="form-row">
-                    <div class="col-3 mt-2">
-                        <label for="exampleFormControlFile1">Building Image</label>
+            <div class="w80 nowrap">
+                <h3 class="mb-5">Project Images</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 nowrap">
+                            <div class="d-flex flex-md-row flex-column align-items-md-center row">
+                                <div class="col-12 col-sm-2 col-md-2 col-xl-2">
+                                    <label class="col-form-label">Building Image</label>
+                                </div>
+                                <div class="col-12 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                                    <div class="row d-flex flex-row align-items-md-center">
+                                        <img class="col-5" src="assets/img/imgupload.png" height="50" width="100">
+                                        <div class="col-7 py-1 px-2">
+                                            <label class="btn btn-primary">
+                                                <input type="file" class="fx-hide">
+                                                Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                      <div class="col-3">
-                           <img class="mx-2" src="assets/img/imgupload.png" height="50" width="100">
-                      </div>
-                         <div class="col-6 mt-2">
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                         </div>
-                </div>
-            </form>
-              
-           <div class="row ml-5">
-            <div class="form-row "> 
-                <div class="col-12 ">             
-              <select class="  px-1 ml-4  mt-4" placeholder="2bhk">
-                <option value="volvo"> 1bhk</option>
-                <option value="saab">2bhk</option>
-                <option value="mercedes">3bhk</option>
-            </select>       
+                    <div class="row ml-md-4">
+                        <div class="col-12 ">
+                                <select class="ml-0 px-md-1 mt-md-4" placeholder="2bhk">
+                                    <option value="volvo"> 1bhk</option>
+                                    <option value="saab">2bhk</option>
+                                    <option value="mercedes">3bhk</option>
+                                </select>
+                        </div>
+                        
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 nowrap">
+                            <div class="d-flex flex-md-row flex-column align-items-md-center row">
+                                <div class="col-12 col-sm-2 col-md-2 col-xl-2 d-flex flex-column flex-md-row row">
+                                    <label class="col-form-label">Living Room</label>
+                                </div>
+                                <div class="col-12 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                                    <div class="row d-flex flex-row align-items-md-center justify-content-center">
+                                        <input type="text" name="" class="form-control px-md-1 mt-4 col-4" placeholder="sq.ft">
+                                        <img class="col-4" src="assets/img/imgupload.png" height="50" width="auto">
+                                        <div class="col-4 py-1 mt-md-4 pl-md-2">
+                                            <label class="btn btn-primary nowrap">
+                                                <input type="file" class="fx-hide">
+                                                Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-md-row flex-column align-items-md-center row">
+                                <div class="col-12 col-sm-2 col-md-2 col-xl-2 d-flex flex-column flex-md-row row">
+                                    <label class="col-form-label">Bed Room</label>
+                                </div>
+                                <div class="col-12 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                                    <div class="row d-flex flex-row align-items-md-center justify-content-center">
+                                        <input type="text" name="" class="form-control px-md-1 mt-md-4 col-4" placeholder="sq.ft">
+                                        <img class="col-4" src="assets/img/imgupload.png" height="50" width="100">
+                                        <div class="col-4 py-md-1 mt-md-4 pl-md-2">
+                                            <label class="btn btn-primary">
+                                                <input type="file" class="fx-hide">
+                                                Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-md-row flex-column align-items-md-center row">
+                                <div class="col-12 col-sm-2 col-md-2 col-xl-2 d-flex flex-column flex-md-row row">
+                                    <label class="col-form-label">Bath Room</label>
+                                    <select class="col-2 col-md-6 col-sm-6 col-xl-6 col-lg-6 px-1 " placeholder="2">
+                                        <option value="1"> 1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                                    <div class="row d-flex flex-row align-items-md-center justify-content-center">
+                                        <input type="text" name="" class="form-control px-md-1 mt-md-4 col-4" placeholder="sq.ft">
+                                        <img class="col-4" src="assets/img/imgupload.png" height="50" width="100">
+                                        <div class="col-4 py-1 mt-md-4 pl-md-2">
+                                            <label class="btn btn-primary">
+                                                <input type="file" class="fx-hide">
+                                                Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-md-row flex-column align-items-md-center row">
+                                <div class="col-12 col-sm-2 col-md-2 col-xl-2 d-flex flex-column flex-md-row row">
+                                    <label class="col-form-label">Dining Hall</label>
+                                </div>
+                                <div class="col-12 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                                    <div class="row d-flex flex-row align-items-md-center justify-content-center">
+                                        <input type="text" name="" class="form-control px-md-1 mt-md-4 col-4" placeholder="sq.ft">
+                                        <img class="col-4" src="assets/img/imgupload.png" height="50" width="100">
+                                        <div class="col-4 py-1 mt-md-4 pl-md-2">
+                                            <label class="btn btn-primary">
+                                                <input type="file" class="fx-hide">
+                                                Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-md-row flex-column align-items-md-center row">
+                                <div class="col-12 col-sm-2 col-md-2 col-xl-2 d-flex flex-column flex-md-row row">
+                                    <label class="col-form-label">Kitchen</label>
+                                </div>
+                                <div class="col-12 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                                    <div class="row d-flex flex-row align-items-md-center justify-content-center">
+                                        <input type="text" name="" class="form-control px-md-1 mt-md-4 col-4" placeholder="sq.ft">
+                                        <img class="col-4" src="assets/img/imgupload.png" height="50" width="100">
+                                        <div class="col-4 py-1 mt-md-4 pl-md-2">
+                                            <label class="btn btn-primary">
+                                                <input type="file" class="fx-hide">
+                                                Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 mt-3 col-form-label">Assign to floor</label>
+                            <select class="col-sm-3 form-control  px-1   mt-3" placeholder="1 Floor">
+                                <option value="volvo"> 1 Floor</option>
+                                <option value="saab">2 Floor</option>
+                                <option value="mercedes">3 Floor</option>
+                                <option value="audi">4 Floor</option>
+                                <option value="audi">5 Floor</option>
+                            </select>
+                        <button type="button" class="btn btn-outline-dark  ml-auto mt-5 ">Save</button>
+                    </div>
+                </form>
             </div>
-              
-         
-                <div class="form-row ">
-                    <div class="col-2 mt-4">
-                        <label for="exampleFormControlFile1">Living Room</label>
-                    </div>
-                        
-                    <div class="col-2">
-                    <input type="text" name="" class="form-control mr-2 px-1 mt-4"
-                                    placeholder="sq.ft"></div>
-                      <div class="col-3  mt-2">
-                           <img class="mx-2" src="assets/img/imgupload.png" height="50" width="100">
-                      </div>
-                         <div class="col-5 mt-4">
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                         </div>
-                </div>
-           
-                <div class="form-row">
-                    <div class="col-2 mt-4">
-                        <label for="exampleFormControlFile1">Bed Room</label>
-                    </div>
-                        
-                    <div class="col-2">
-                    <input type="text" name="" class="form-control mr-2 px-1 mt-4"
-                                    placeholder="sq.ft"></div>
-                      <div class="col-3  mt-3">
-                           <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
-                      </div>
-                         <div class="col-5 mt-4">
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                         </div>
-                </div>
-             
-                <div class="form-row">
-                    <div class="col-2 mt-4">
-                        <label for="exampleFormControlFile1">Bath Room</label>
-                    </div>
-                        
-                    <div class="col-2">
-                    <input type="text" name="" class="form-control mr-2 px-1 mt-4"
-                                    placeholder="sq.ft"></div>
-                      <div class="col-3  mt-3">
-                           <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
-                      </div>
-                         <div class="col-5 mt-4">
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                         </div>
-                </div>
-                     
-                <div class="form-row">
-                    <div class="col-2 mt-4">
-                        <label for="exampleFormControlFile1">Dining Hall</label>
-                    </div>
-                        
-                    <div class="col-2">
-                    <input type="text" name="" class="form-control mr-2 px-1 mt-4"
-                                    placeholder="sq.ft"></div>
-                      <div class="col-3  mt-3">
-                           <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
-                      </div>
-                         <div class="col-5 mt-4">
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                         </div>
-                </div>
-                  </div>    
-                <div class="form-row">
-                    <div class="col-2 mt-4">
-                        <label for="exampleFormControlFile1">Kitchen</label>
-                    </div>
-                        
-                    <div class="col-2">
-                    <input type="text" name="" class="form-control mr-2 px-1 mt-4"
-                                    placeholder="sq.ft"></div>
-                      <div class="col-3  mt-3">
-                           <img class="mx-3" src="assets/img/imgupload.png" height="50" width="100">
-                      </div>
-                         <div class="col-5 mt-4">
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                         </div>
-                </div>
-                       
-            </div>  
-                <div class="form-group row">
-                    <label class="col-sm-2 mt-3 col-form-label">Assign to floor</label>
-                    <div class="col-sm-3">
-                        <select class="form-control  px-1   mt-3" placeholder="1 Floor">
-                            <option value="volvo"> 1 Floor</option>
-                            <option value="saab">2 Floor</option>
-                            <option value="mercedes">3 Floor</option>
-                            <option value="audi">4 Floor</option>
-                            <option value="audi">5 Floor</option>
-                        </select>    
-                    </div>
-                    
-                 
-                <button type="button" class="btn btn-outline-dark  mr-auto mt-1 ">Save</button>
-                   
-            </div>
-            
-       
+        </div>
         <div class="tab-pane fade" id="Footer" role="tabpanel" aria-labelledby="contact-tab">
             <div class="w80 nowrap">
-                <div class="col-4 mb-4">
-                    <h3>Upload Floor Plan</h3>
+                <div class="col-12 col-md-4 mb-4">
+                    <h4>Upload Floor Plan</h4>
                     <hr>
                 </div>
-                <form class="ml-4">
+                <form class="ml-md-4">
                     <div class="form-group row">
                         <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">Floor</label>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 col-12">
                             <select class="custom-select">
                                 <option selected>select</option>
                                 <option value="1">2bhk</option>
@@ -254,7 +267,7 @@
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">Floor</label>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 col-12">
                             <select class="custom-select">
                                 <option selected>select</option>
                                 <option value="1">2bhk</option>
@@ -265,19 +278,18 @@
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">Area</label>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 col-12">
                             <input class="form-control" type="text" placeholder="Sq.ft">
                         </div>
                     </div>
                     <div class="d-flex mt-5 align-items-center">
                         <img src="assets/img/imgupload.png" alt="" height="50" width="100">
-                        <input type="file">
+                        <label class="btn btn-primary">
+                            <input type="file" class="fx-hide">
+                            Upload
+                        </label>
                     </div>
-                    <hr class="col-4 mb-4">
-
-                    <div class="cuisinecarousel">
-
-                    </div>
+                    <hr class="col-4 mb-4">                    
                 </form>
             </div>
         </div>

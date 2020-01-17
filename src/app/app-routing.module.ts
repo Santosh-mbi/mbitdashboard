@@ -10,12 +10,15 @@ import { ImagesComponent } from './images/images.component';
 import { VideosComponent } from './videos/videos.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { SettingsComponent } from './settings/settings.component';
+import { CreatWebsiteComponent } from './creat-website/creat-website.component';
+import { ChooseTemplateComponent } from './choose-template/choose-template.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'dashboard', component: DashboardComponent,
         children: [
+          { path: '', component: CreatWebsiteComponent, pathMatch: 'full' },
           { path: 'layout', component: WeblayoutComponent },
           { path: 'baseinfo', component: BasicInformationComponent },
           { path: 'images', component: ImagesComponent },
@@ -24,6 +27,8 @@ const routes: Routes = [
           { path: 'videos', component: VideosComponent },
           { path: 'schedule', component: ScheduleComponent },
           { path: 'settings', component: SettingsComponent },
+          { path: 'create-website', component: CreatWebsiteComponent },
+          { path: 'choose-template', component: ChooseTemplateComponent },
         ]
       },
   

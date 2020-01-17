@@ -22,6 +22,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 // For MDB Angular Pro
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
+import { ChooseTemplateComponent } from './choose-template/choose-template.component';
+import { CreatWebsiteComponent } from './creat-website/creat-website.component';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +41,9 @@ import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
     ImagesComponent,
     VideosComponent,
     ScheduleComponent,
-    SettingsComponent
+    SettingsComponent,
+    ChooseTemplateComponent,
+    CreatWebsiteComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,8 @@ import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
     MatDatepickerModule,MatFormFieldModule,
     MatNativeDateModule,
     MDBBootstrapModule.forRoot(),
-    CarouselModule, WavesModule
+    CarouselModule, WavesModule,
+    PaginationModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
