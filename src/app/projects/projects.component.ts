@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  isProjectClicked: boolean = true;
 
   constructor() { }
   cards = [
@@ -59,6 +60,15 @@ export class ProjectsComponent implements OnInit {
   }
   
 
-  
 
+  addProject(){
+    this.isProjectClicked = false;
+  }
+
+  editProject(){
+    this.isProjectClicked = false;
+  }
+  latitude = -28.68352;
+  longitude = -147.20785;
+  mapType = 'satellite';
 }
