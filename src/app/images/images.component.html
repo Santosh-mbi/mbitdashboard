@@ -1,22 +1,29 @@
-<h5>Home Page </h5>
-<div class="custom-control custom-switch mt-2">
-     <input type="checkbox" class="custom-control-input" id="customSwitches2">
-     <label class="custom-control-label" for="customSwitches2">Carousal</label>
+<div class="d-flex flex-row align-items-center">
+     <h5>Home Page </h5>
+     <div class="custom-control custom-switch ml-3">
+          <input type="checkbox" class="custom-control-input" id="customSwitches2">
+          <label class="custom-control-label" for="customSwitches2">Carousal</label>
+     </div>
 </div>
 <!--Carousel Wrapper-->
-<div class="">
-
+<div class="d-flex flex-md-row flex-column align-items-center carsosel-wrap">
+     <div class=" choosefile">
+          <label class="btn btn-primary">
+               <input type="file" class="fx-hide">
+               Choose File
+           </label>
+     </div>    
+     <mdb-carousel [isControls]="false" class="carousel-multi-item multi-animation mb-5" [type]="'carousel-multi-item'">
+               <mdb-carousel-item [ngStyle]="{'min-height':'150px'}" class="col-md-12 no-gutters align-items-center" *ngFor="let item of slides; let i = index">
+                    <div class="col-md-2 no-gutters d-flex" [ngClass]="{'d-none d-md-block': cardIndex !== 0}"
+                         *ngFor="let card of item; let cardIndex = index">
+                         <mdb-card [ngClass]="{'mid-img': cardIndex === 1}" class="my-1">
+                              <mdb-card-img [src]="card.img" alt="Card image cap" ></mdb-card-img>
+                         </mdb-card>
+                    </div>
+               </mdb-carousel-item>
+     </mdb-carousel>
 </div>
-<mdb-carousel  [isControls]="false" class="carousel-multi-item multi-animation mb-5 mbs" [type]="'carousel-multi-item'">
-     <mdb-carousel-item [ngStyle]="{'min-height':'150px'}" class="col-md-10 no-gutters align-items-center" *ngFor="let item of slides; let i = index">
-          <div class="col-md-2 no-gutters d-flex" [ngClass]="{'d-none d-md-block': cardIndex !== 0}"
-               *ngFor="let card of item; let cardIndex = index">
-               <mdb-card [ngClass]="{'mid-img': cardIndex === 1}" class="my-1">
-                    <mdb-card-img [src]="card.img" alt="Card image cap" ></mdb-card-img>
-               </mdb-card>
-          </div>
-     </mdb-carousel-item>
-</mdb-carousel>
 
 
 <div class="form-row">

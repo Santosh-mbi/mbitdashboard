@@ -26,7 +26,7 @@ import { ChooseTemplateComponent } from './choose-template/choose-template.compo
 import { CreatWebsiteComponent } from './creat-website/creat-website.component';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { AddprojectComponent } from './addproject/addproject.component';
-
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -56,7 +56,10 @@ import { AddprojectComponent } from './addproject/addproject.component';
     MatNativeDateModule,
     MDBBootstrapModule.forRoot(),
     CarouselModule, WavesModule,
-    PaginationModule.forRoot()
+    PaginationModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

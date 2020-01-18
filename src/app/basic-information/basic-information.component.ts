@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basic-information.component.scss']
 })
 export class BasicInformationComponent implements OnInit {
+  public selecteditem: any;
 
   constructor() { }
 
   ngOnInit() {
   }
+  
 
+ onClick(title:any, basicModal:any){
+
+   this.selecteditem = title;
+
+   basicModal.show()
+
+  //  console.log(this.selecteditem); // print in console
+
+ }
 }
