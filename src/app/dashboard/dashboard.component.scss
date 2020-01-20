@@ -49,16 +49,12 @@
         padding: 1rem 1rem;
     }
  }
-.navlist:hover{
-    background-color: var(--color-tertiary-dark);
-    cursor: pointer;
-    color: var(--color-primary-white);
-}
+
 .navlist {
-    img{
+    img,svg{
         width:2rem;
+        height: 2rem;
         margin-right: 1rem;
-        color: var(--color-secondary-blue);  
     }
     @media only screen and (max-width: $bp-smallest) {
         img{
@@ -66,6 +62,17 @@
         }
      }
     
+}
+.navlist:hover{
+    background-color: var(--color-secondary-light);
+    cursor: pointer;
+   
+    svg path{
+    
+            color: var(--color-primary-white) !important;  
+            fill: var(--color-primary-white) !important;  
+  
+    }
 }
 
 .navlist span{
