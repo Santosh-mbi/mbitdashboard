@@ -35,6 +35,7 @@
     position: absolute;
     left: 55%;
     top: 12%;
+    z-index: 99;
   }
 }
 @media only screen and (max-width: $bp-smallest) {
