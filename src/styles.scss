@@ -80,6 +80,12 @@ body {
     text-transform: inherit !important;
 
 }
+
+.dashboard .main img:not(.sidebar):not(.icons){
+    min-width: 100px;
+    max-width: 100%;
+    min-height: 100px;
+}
 .card{
 	input,textarea{
 		border: 2px solid var(--color-border-light);
