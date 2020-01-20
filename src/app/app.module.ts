@@ -58,7 +58,7 @@ import { AgmCoreModule } from '@agm/core';
     CarouselModule, WavesModule,
     PaginationModule.forRoot(),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCVWrwHMG-YJeoy4GOxr3c0gEW7URuIyKw'
+      apiKey: ''
     })
   ],
   providers: [],
