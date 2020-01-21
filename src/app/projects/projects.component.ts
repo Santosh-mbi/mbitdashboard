@@ -68,7 +68,5 @@ export class ProjectsComponent implements OnInit {
   editProject(){
     this.isProjectClicked = false;
   }
-  latitude = -28.68352;
-  longitude = -147.20785;
-  mapType = 'satellite';
+  
 }
