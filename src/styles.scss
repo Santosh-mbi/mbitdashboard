@@ -59,7 +59,7 @@ body {
    }
 }
 .w80{
-	padding: 5%;
+	padding: 2%;
 	margin-left: 5%;
 }
 .fx-hide{
@@ -86,7 +86,10 @@ body {
 		border-radius: 5px;
 		padding: 15px 5px;
 	}
-
+    .card-body{
+        background-color: var(--color-primary-gray);        
+        border:none;
+    }
 	select{
 		border: 2px solid var(--color-border-light);
 		border-radius: 5px;
@@ -106,4 +109,21 @@ body {
 		box-shadow: 0 0 0 0.2rem var(--color-primary-gray); 
 	}
     
+}
+li.nav-item{
+    padding-right: 0.1rem;
+  transition: all 0.1s;
+
+}
+.nav-tabs a.nav-link.active {
+    color: #495057;
+    background-color: #42a5f6 !important;
+    border-color: #dee2e6 #dee2e6 #fff;
+    transform: scaleY(1.2);
+}
+
+.nav-tabs .nav-link {
+    color: #495057;
+    background-color: #bbdefa !important;
+    border-color: #dee2e6 #dee2e6 #fff;
 }

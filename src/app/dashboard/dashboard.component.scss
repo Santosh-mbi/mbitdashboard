@@ -2,12 +2,12 @@
 .dashboard{
     display: flex;
     justify-content: space-around;
-   
+  
 }
 .sidebar{
     height: auto;
     width: auto;
-    padding: 5rem 1rem;
+    padding: 2rem 1rem;
     background-color: var(--color-primary-gray);
     margin: 2rem 1rem;
     flex: 0 0 18%;
@@ -15,10 +15,11 @@
     flex-direction: column;
 }
 .main{
+    height: auto;
     flex: auto;
     margin: 2rem 1rem;
     background-color: var(--color-primary-gray);
-    padding: 5rem 10rem; 
+    padding: 2rem 10rem; 
 }
 @media only screen and (max-width: $bp-smallest) {
     .main{
@@ -36,7 +37,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+   
     @media only screen and (max-width: $bp-medium) {
        span{
            display: none;
@@ -66,7 +67,7 @@
 .navlist:hover{
     background-color: var(--color-secondary-light);
     cursor: pointer;
-   
+   color: #fff;
     svg path{
     
             color: var(--color-primary-white) !important;  
@@ -78,5 +79,17 @@
 .navlist span{
    font-size: 1.2rem;
 }
-
+.btn-preview.btn-primary:active,.btn-publish.btn-primary:active{
+    background-color: #ec6f08!important;
+}
+.btn-preview,.btn-publish{
+    
+        background-color: #fe790c!important;
+        color: #fff;
+    
+    svg{
+        height:2rem;
+        width:2rem;
+    }
+}
   
