@@ -1,13 +1,13 @@
 .navbar{
     background-color: var(--color-primary-gray);
-    padding: 1.5rem 4rem;
+    padding: 0.2rem 4rem;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 .brand--name{
-    width:13rem;
+    width:12rem;
     height: auto;
 }
 .navbar ul{
